@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const treatments = [
+  {
+    id: 'rfa',
+    title: 'Radio Frequency Ablation (RFA)',
+    category: 'Thermal Ablation',
+    content: 'Radiofrequency ablation is a procedure that uses radio waves to produce electrical current, which heats up a small area of the vein surface from inside. This process leads to obliteration of the vein, causing it to close. The procedure is done at the office under local anaesthetic and guided by sonar.',
+  },
+  {
+    id: 'laser',
+    title: 'Endovenous Laser Treatment',
+    category: 'Thermal Ablation',
+    content: 'Endovenous laser treatment can treat larger varicose veins in the legs. A laser fibre is passed through a thin tube (catheter) into the vein. While doing this, the doctor watches the vein on a duplex ultrasound screen.',
+  },
+  {
+    id: 'liquid-sclero',
+    title: 'Liquid Sclerotherapy',
+    category: 'Non-Thermal Ablation',
+    content: 'The liquid chemical solution (sodium tetradecyl sulphate / STS) is injected through a very fine needle directly into the vein and causes almost no pain. Liquid Sclerotherapy is a simple and safe procedure that successfully treats over 90% of varicose veins. It is especially useful for spider veins and reticular veins. In some patients, more than one session may be required, usually after an interval of 4 to 6 weeks.',
+  },
+  {
+    id: 'foam-sclero',
+    title: 'Foam Sclerotherapy',
+    category: 'Non-Thermal Ablation',
+    content: 'For larger varicose veins, the liquid sclerosant is converted into a viscous, thick foam by mixing it with either air or nitrogen. This foam is then injected into the varicose veins under ultrasound guidance. Since the foam is viscous, it stays in contact with the vein wall for a longer time, allowing the sclerosant more time to act and increasing the chances of the vein staying permanently closed.',
+  },
+  {
+    id: 'glue',
+    title: 'Glue Therapy (VenaSeal)',
+    category: 'Non-Thermal Ablation',
+    content: 'Varicose vein glue is one of the most advanced permanent treatments for varicose veins. During treatment with the VenaSeal system, a disposable set is placed directly into the affected vein under sterile conditions, gluing the vein closed.',
+  },
+  {
+    id: 'moca',
+    title: 'MOCA (Mechanico Chemical Ablation)',
+    category: 'Non-Thermal Ablation',
+    content: 'MOCA (Clarivein or Flebogrif) is a newly developed, non-thermal, non-tumescent technique for the treatment of varicose veins. It is an alternative method for closing off a vein causing chronic venous reflux, restless leg syndrome, itching, and pain.',
+  },
+  {
+    id: 'hifu',
+    title: 'High Intensity Focused Ultrasound (HIFU)',
+    category: 'Non-Thermal Ablation',
+    content: 'HIFU may prove to be the next disruptive technology in the treatment of varicose veins and venous reflux disease. It is totally non-invasive, with ultrasound energy being beamed from a transducer applied to the skin above the vein.',
+  },
+  {
+    id: 'steam',
+    title: 'Steam Ablation',
+    category: 'Thermal Ablation',
+    content: 'Endovenous Steam Ablation (EVSA) is a method of thermal vein ablation that works by heating the veins with steam to a maximum temperature of 120 degrees centigrade. Steam is ejected into the treated vein from two areas at the tip of the catheter.',
+  },
+];
+---
+
+<Layout title="Services" description="Comprehensive varicose vein treatments at The Vein Clinic Pretoria - RFA, Laser, Sclerotherapy, Glue Therapy, MOCA, HIFU, and more.">
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary to-primary-dark text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-4">Our Services</h1>
+      <p class="text-lg text-neutral-200">Minimally invasive, evidence-based treatments for varicose veins and venous disorders.</p>
+    </div>
+  </section>
+
+  <!-- Methods overview -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-primary mb-8">Methods of Treatment</h2>
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-primary/5 rounded-xl p-6">
+          <h3 class="font-bold text-primary mb-3">1. Endovenous Therapy</h3>
+          <p class="text-neutral-600 text-sm mb-2"><strong>Thermal:</strong> RFA, Laser, Microwave, Steam</p>
+          <p class="text-neutral-600 text-sm"><strong>Non-Thermal:</strong> Sclerotherapy, Glue, MOCA, HIFU</p>
+        </div>
+        <div class="bg-primary/5 rounded-xl p-6">
+          <h3 class="font-bold text-primary mb-3">2. Compression Therapy</h3>
+          <p class="text-neutral-600 text-sm">Medical-grade compression stockings to support venous return and manage symptoms.</p>
+        </div>
+        <div class="bg-primary/5 rounded-xl p-6">
+          <h3 class="font-bold text-primary mb-3">3. Diagnostics</h3>
+          <p class="text-neutral-600 text-sm">Duplex ultrasound scanning — the gold standard for diagnosing venous disease.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ultrasound diagnostics -->
+  <section class="py-16 bg-neutral-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-primary mb-6">Ultrasound Diagnostics (Sonar)</h2>
+      <div class="bg-white rounded-xl p-8 shadow-sm">
+        <p class="text-neutral-600 leading-relaxed mb-4">
+          Vascular ultrasound imaging is considered the gold standard in diagnosing and guiding venous disease treatment. The scan examines deep and superficial veins in the legs to assess patency of the deep venous system and evaluate varicosities and venous reflux.
+        </p>
+        <p class="text-neutral-600 leading-relaxed mb-6">
+          Our sonographer will scan from the junction of the leg and hip down to the mid-calf on each side, checking for blood clots. You will then stand so the sonographer can assess the superficial veins for reflux.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4 text-sm">
+          <div class="bg-neutral-50 rounded-lg p-4">
+            <h4 class="font-bold text-primary mb-2">Preparation</h4>
+            <p class="text-neutral-500">No preparation is required for this exam.</p>
+          </div>
+          <div class="bg-neutral-50 rounded-lg p-4">
+            <h4 class="font-bold text-primary mb-2">Duration</h4>
+            <p class="text-neutral-500">Plan for 30 to 60 minutes depending on whether one or both legs are assessed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment details -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-primary mb-8">Treatment Procedures</h2>
+      <div class="space-y-6">
+        {treatments.map(t => (
+          <div id={t.id} class="bg-white rounded-xl p-6 shadow-sm border border-neutral-200">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-xl font-bold text-primary">{t.title}</h3>
+              <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full whitespace-nowrap ml-4">{t.category}</span>
+            </div>
+            <p class="text-neutral-600 leading-relaxed text-sm">{t.content}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Tumescent anaesthesia -->
+  <section class="py-16 bg-neutral-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-primary mb-6">Local Anaesthesia</h2>
+      <div class="bg-white rounded-xl p-8 shadow-sm">
+        <p class="text-neutral-600 leading-relaxed mb-4">
+          Tumescent anaesthetic describes the use of large volumes of dilute anaesthetic solutions infiltrated into the space surrounding the veins to be treated. A solution of lidocaine with or without epinephrine in normal saline, often buffered with sodium bicarbonate, is used.
+        </p>
+        <h3 class="font-bold text-primary mb-3">Purposes of Tumescent Anaesthesia:</h3>
+        <ul class="space-y-2 text-neutral-600 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="text-accent font-bold">A.</span>
+            <span>Provides local anaesthetic effect</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent font-bold">B.</span>
+            <span>Empties the vein to maximise contact of the thermal device with the vein wall</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent font-bold">C.</span>
+            <span>Minimises heating of adjacent structures</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold text-primary mb-4">Ready to Start Treatment?</h2>
+      <p class="text-neutral-600 mb-6">Based on your sonar findings, our surgeon will recommend the most suitable treatment option for you.</p>
+      <a href="/#contact" class="inline-block bg-primary hover:bg-primary-light text-white font-semibold px-6 py-3 rounded-lg transition-colors">Book a Consultation</a>
+    </div>
+  </section>
+</Layout>
