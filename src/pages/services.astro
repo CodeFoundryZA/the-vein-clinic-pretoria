@@ -8,12 +8,7 @@ const treatments = [
     category: 'Thermal Ablation',
     content: 'Radiofrequency ablation is a procedure that uses radio waves to produce electrical current, which heats up a small area of the vein surface from inside. This process leads to obliteration of the vein, causing it to close. The procedure is done at the office under local anaesthetic and guided by sonar.',
   },
-  {
-    id: 'laser',
-    title: 'Endovenous Laser Treatment',
-    category: 'Thermal Ablation',
-    content: 'Endovenous laser treatment can treat larger varicose veins in the legs. A laser fibre is passed through a thin tube (catheter) into the vein. While doing this, the doctor watches the vein on a duplex ultrasound screen.',
-  },
+
   {
     id: 'liquid-sclero',
     title: 'Liquid Sclerotherapy',
@@ -26,18 +21,8 @@ const treatments = [
     category: 'Non-Thermal Ablation',
     content: 'For larger varicose veins, the liquid sclerosant is converted into a viscous, thick foam by mixing it with either air or nitrogen. This foam is then injected into the varicose veins under ultrasound guidance. Since the foam is viscous, it stays in contact with the vein wall for a longer time, allowing the sclerosant more time to act and increasing the chances of the vein staying permanently closed.',
   },
-  {
-    id: 'glue',
-    title: 'Glue Therapy (VenaSeal)',
-    category: 'Non-Thermal Ablation',
-    content: 'Varicose vein glue is one of the most advanced permanent treatments for varicose veins. During treatment with the VenaSeal system, a disposable set is placed directly into the affected vein under sterile conditions, gluing the vein closed.',
-  },
-  {
-    id: 'moca',
-    title: 'MOCA (Mechanico Chemical Ablation)',
-    category: 'Non-Thermal Ablation',
-    content: 'MOCA (Clarivein or Flebogrif) is a newly developed, non-thermal, non-tumescent technique for the treatment of varicose veins. It is an alternative method for closing off a vein causing chronic venous reflux, restless leg syndrome, itching, and pain.',
-  },
+
+
   {
     id: 'hifu',
     title: 'High Intensity Focused Ultrasound (HIFU)',
@@ -53,7 +38,7 @@ const treatments = [
 ];
 ---
 
-<Layout title="Services" description="Comprehensive varicose vein treatments at The Vein Clinic Pretoria - RFA, Laser, Sclerotherapy, Glue Therapy, MOCA, HIFU, and more.">
+<Layout title="Services" description="Comprehensive varicose vein treatments at The Vein Clinic Pretoria - RFA, Sclerotherapy, HIFU, Steam Ablation, and more.">
   <!-- Hero -->
   <section class="relative text-white overflow-hidden py-16 md:py-20" style="background-image: url('/banner.png'); background-size: cover; background-position: center;">
     <div class="absolute inset-0 bg-primary-dark/70"></div>
@@ -70,8 +55,8 @@ const treatments = [
       <div class="grid md:grid-cols-3 gap-6 mb-12">
         <div class="bg-primary/5 rounded-xl p-6">
           <h3 class="font-bold text-primary mb-3">1. Endovenous Therapy</h3>
-          <p class="text-neutral-600 text-sm mb-2"><strong>Thermal:</strong> RFA, Laser, Microwave, Steam</p>
-          <p class="text-neutral-600 text-sm"><strong>Non-Thermal:</strong> Sclerotherapy, Glue, MOCA, HIFU</p>
+          <p class="text-neutral-600 text-sm mb-2"><strong>Thermal:</strong> RFA, Microwave, Steam</p>
+          <p class="text-neutral-600 text-sm"><strong>Non-Thermal:</strong> Sclerotherapy, HIFU</p>
         </div>
         <div class="bg-primary/5 rounded-xl p-6">
           <h3 class="font-bold text-primary mb-3">2. Compression Therapy</h3>
