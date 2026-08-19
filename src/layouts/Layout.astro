@@ -23,6 +23,15 @@ const navLinks = [
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} | The Vein Clinic Pretoria</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-11547840578"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11547840578');
+    </script>
   </head>
   <body class="min-h-screen flex flex-col bg-neutral-50">
     <!-- Header -->
@@ -128,6 +137,18 @@ const navLinks = [
       const menu = document.getElementById('mobile-menu');
       btn?.addEventListener('click', () => {
         menu?.classList.toggle('hidden');
+      });
+
+      document.querySelectorAll('[data-contact-conversion]').forEach((link) => {
+        link.addEventListener('click', () => {
+          const googleTag = (window as typeof window & {
+            gtag?: (...args: unknown[]) => void;
+          }).gtag;
+
+          googleTag?.('event', 'conversion', {
+            send_to: 'AW-11547840578/gW7ACIqo6oEaEMKguIIr',
+          });
+        });
       });
     </script>
   </body>
